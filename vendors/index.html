@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+		<script src="vendors/js/snowstorm.js"></script>
+		<script src="resources/js/jquery-1.12.0.min.js"></script>
+		<script src="vendors/js/sweetalert.min.js"></script>
+		<script src="resources/js/validation.js"></script>
+		<link rel="stylesheet" type="text/css" href="vendors/css/sweetalert.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+		<title>Ruchi Desai</title>
+	</head>
+	<body>
+		<header>
+			<div class="hero-text-box">
+				<h1>Life's a climb, but the view is great!</h1>
+			</div>
+		</header>
+
+		<nav class="main-nav">
+			<div>
+				<a id="aboutmeNav">About Me</a>
+				<a id="resumeNav">Resume</a>
+				<a id="contactNav">Contact</a>
+			</div>
+		</nav>
+
+		<div class="main">
+			<a id="aboutmeSection"/><section class="section-aboutme">
+				<div class="row">
+					<h2>About Me</h2>
+				</div>
+				<div class="row aboutme-photo">
+					<img src="resources/img/ruchi.png" alt="Ruchi">
+				</div>
+				<div class="row">
+					<h3>Designer . Developer . Traveller</h3>
+				</div>
+				<div class="row aboutme-icons">
+					<a  href="https://www.facebook.com/ruchi.desai.921"><i id="facebook-icon-id" class="ion-social-facebook"></i></a>
+					<a href="https://www.linkedin.com/in/ruchi-desai-3a987510a"><i class="ion-social-linkedin"></i></a>
+					<a href="https://plus.google.com/u/0/114843003698010478290"><i class="ion-social-googleplus"></i></a>
+					<a href="https://www.instagram.com/cr4zy_ru/"><i class="ion-social-instagram-outline"></i></a>
+				</div>
+				<div class="row">
+					<p class="long-copy">Hi, I'm Ruchi Desai. I am currently a Computer Science graduate student at California State University Long Beach. I'm very passionate about software development and my forte is designing front-end. I am adept with the traditional and latest web technologies. I love to travel, read, and meet new people.</p>
+				</div>
+			</section>
+
+
+			<a id="resumeSection"/><section class="section-resume">
+				<div class="row">
+					<h2>Resume</h2>
+					<p class="long-copy">Hey there, wanna look at my full resume? Click <a href="Resume2017.pdf">here</a>!</p>
+				</div>
+
+				<div class="row">
+					<div class="col span-1-of-4 feature-box">
+						<i class="ion-clipboard icon-big"></i>
+						<h3>Skills</h3>
+
+						<h4>Programming Languages</h4>
+						<p>C, C++, C#, and Java</p>
+
+						<h4>Web Technologies</h4>
+						<p>HTML, CSS, Javascript, and PHP</p>
+
+						<h4>Database Management</h4>
+						<p>SQL Server and MySQL</p>
+
+						<h4>Operating System</h4>
+						<p>Windows XP/Vista/7/8/10, Mac OSX</p>
+					</div>
+
+					<div class="col span-1-of-4 feature-box">
+						<i class="ion-university icon-big"></i>
+						<h3>Education</h3>
+
+						<h4>MS Computer Science</h4>
+						<p>Cal State Long Beach</br/>Expected To Graduate: May 2017</p>
+
+						<h4>Master of Computer Application</h4>
+						<p>University of Mumbai</br/>Graduated: July 2014</p>
+
+						<h4>BS Information Technology</h4>
+						<p>University of Mumbai</br/>Graduated: July 2011</p>
+
+					</div>
+
+					<div class="col span-1-of-4 feature-box">
+						<i class="ion-briefcase icon-big"></i>
+						<h3>Experience</h3>
+
+						<h4>Technical Editor</h4>
+						<p>Packt Publishing</p>
+						<p>Nov '14 to July '15</p>
+						<p>Code testing, co-ordinating with other teams, quality assurance</p>
+
+						<h4>Software Engineer Intern</h4>
+						<p>Prudence Tech</p>
+						<p>Jan '14 to July '14</p>
+						<p>Developed an end-to-end comprehensive, component-based distributed software</p>
+
+					</div>
+
+					<div class="col span-1-of-4 feature-box">
+						<i class="ion-heart icon-big"></i>
+						<h3>Interests</h3>
+
+						<h4>Co-Curricular</h4>
+						<p>Artificial Intelligence</p>
+						<p>Semantic Web</p>
+						<p>Web Technologies</p>
+
+						<h4>Extra-Curricular</h4>
+						<p>Reading</p>
+						<p>Swimming</p>
+						<p>Travelling</p>
+					</div>
+				</div>
+			</section>
+			
+			
+			<a id="contactSection"/><section>
+				<div class="row">
+					<h2>Contact</h2>
+					<p class="long-copy">Fancy a chat? Drop me an email and I will reply as soon as I can :)</p>
+				</div>
+				<div class="row">
+					<form id="form-contact" name="form-contact" method="post" class="contact-form">
+						<div class="row">
+							<div class="col span-1-of-3">
+								<label for="name">Name</label>
+							</div>
+							
+							<div class="col span-2-of-3">
+								<input type="text" name="name" id="name" placeholder="Enter your name" onsubmit="validateName()" required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col span-1-of-3">
+								<label for="email">Email</label>
+							</div>
+							
+							<div class="col span-2-of-3">
+								<input type="email" name="email" id="email" placeholder="Enter your email address" onsubmit="validateEmail()" required>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col span-1-of-3">
+								<label for="findMe">How did you find me?</label>
+							</div>
+							
+							<div class="col span-2-of-3">
+								<select name="findMe" id="findMe">
+									<option value="friends" selected>Friend</option>
+									<option value="searchengine">Search Engine</option>
+									<option value="facebook">Facebook</option>
+									<option value="linkedin">LinkedIn</option>
+									<option value="googleplus">Google+</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col span-1-of-3">
+								<label>Drop me a message</label>
+							</div>
+							
+							<div class="col span-2-of-3">
+								<textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col span-1-of-3">
+								<label>&nbsp;</label>
+							</div>
+							
+							<div class="col span-2-of-3">
+								<input class="btn" type="submit" value="Send it!">
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</section>
+		</div>
+	
+<footer>
+	<div class="row">
+		<div class="col span-1-of-2">
+			<p class="copyrightFooter">Copyright &copy; 2016 by Ruchi Desai. All rights reserved.</p>
+		</div>
+		<div class="col span-1-of-2">
+			<ul class="social-links">
+				<li><a class="extra-padding-class" href="https://www.facebook.com/ruchi.desai.921"><i id="facebook-extra-padding" class="ion-social-facebook"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/ruchi-desai-3a987510a"><i class="ion-social-linkedin"></i></a></li>
+				<li><a href="https://plus.google.com/u/0/114843003698010478290"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="https://www.instagram.com/cr4zy_ru/"><i class="ion-social-instagram-outline"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+
+		<script type="text/javascript">
+			var mainNav = $(".main-nav");
+			var winH = $(window).height();
+			$(window).scroll(function() {
+				if( $(this).scrollTop() > (winH*90/100) && winH == $(window).height()) {
+					mainNav.addClass("main-nav-scrolled");
+				}
+				else {
+					winH = $(window).height();
+					mainNav.removeClass("main-nav-scrolled");
+				}
+			});
+			
+			$("#aboutmeNav").click(function() {
+				$('html, body').animate({ scrollTop: $("#aboutmeSection").offset().top }, 1000);
+			});
+			
+			$("#resumeNav").click(function() {
+				$('html, body').animate({ scrollTop: $("#resumeSection").offset().top }, 1000);
+			});
+			
+			$("#contactNav").click(function() {
+				$('html, body').animate({ scrollTop: $("#contactSection").offset().top }, 1000);
+			});
+			
+			
+		</script>
+	</body>
+</html>

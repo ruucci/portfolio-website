@@ -1,0 +1,386 @@
+/*------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #4d4d4d;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    padding-top: 90vh;
+}
+
+.main,
+.main-nav,
+footer {
+    position: relative;
+    background: #fff;
+	margin: 0;
+}
+
+.main {
+	z-index: 100;
+}
+
+/*------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 10px 20px 10px;
+}
+
+
+.feature-box {
+    padding: 1%;
+}
+
+/*------------------------------------*/
+/* HEADINGS */
+/*------------------------------------*/
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #1274bd;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 120%;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 100%;
+    margin-bottom: 2px;
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+.feature-box p {
+    font-size: 75%;
+    line-height: 140%;
+}
+
+/*------------------------------------*/
+/* PARA */
+/*------------------------------------*/
+
+.long-copy {
+    line-height: 145%;
+    width:80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+/*------------------------------------*/
+/* ICONS */
+/*------------------------------------*/
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #1274bd;
+    margin-bottom: 10px;
+}
+
+
+.aboutme-icons {
+    font-size: 180%;
+    display: block;
+    color: #1274bd;
+    margin-bottom: 10px;
+    padding-left: auto;
+    text-align: center;
+}
+
+
+.aboutme-icons i {
+    margin: 10px;
+}
+
+.aboutme-icons a:link, .aboutme-icons a:visited {
+    text-decoration: none;
+    color: #1274bd;
+}
+
+.aboutme-icons a:hover,.aboutme-icons a:active {
+	color: #fff;
+	text-decoration: none;
+	border-radius:50%;
+    background-color:#1274bd;
+	padding: 0px;
+}
+
+#facebook-icon-id {
+	padding: 0 0.5%;
+}
+
+
+/*------------------------------------*/
+/* PHOTO */
+/*------------------------------------*/
+
+
+.aboutme-photo img {
+    display: block;
+    width: 25%;
+    border-radius: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*------------------------------------*/
+/* ABOUT ME SECTION */
+/*------------------------------------*/
+
+.section-aboutme .row h3 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.section-aboutme .row p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*------------------------------------*/
+/* CONTACT SECTION */
+/*------------------------------------*/
+
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 20px;
+	font-size: 95%;
+}
+
+input[type=text],
+input[type=email],
+select, 
+textarea {
+	width:100%;
+	padding: 7px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+textarea {
+	height: 100px;
+}
+
+label {
+	word-spacing: 1px;
+}
+
+
+*:focus {outline: none}
+
+
+/*------------------------------------*/
+/* BUTTONS */
+/*------------------------------------*/
+
+.btn:link, 
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #4e4e4e;
+    border: 1px solid #fff;
+	background-color: rgba(22, 132, 214, 0.4);
+    transition: background-color 0.2s, color 0.2s;
+	border-radius: 10px;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1274bd;
+    border: 1px solid #1274bd;
+}
+
+
+/*------------------------------------*/
+/* HEADER */
+/*------------------------------------*/
+
+header {
+    height: 90vh;
+    background-image: url(img/zion-self.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width:100%;
+    top:0;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+	top:45%;
+}
+
+
+/*------------------------------------*/
+/* NAVIGATION BAR*/
+/*------------------------------------*/
+
+
+.main-nav {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(45,45,45,0.65) 1%); 
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(45,45,45,0.65) 1%); 
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(45,45,45,0.65) 1%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a62d2d2d',GradientType=0 );
+    width: 100%;
+    height:10vh;
+    float: right;
+    z-index:150;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.main-nav div {
+	margin-right: 20px;
+	float: right;
+	height: 5vh;
+	margin: 3vh 0 1vh 0;
+	font-size: 95%
+}
+.main-nav div a, .main-nav div a:link, .main-nav div a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 2px 0;
+	text-align: center;
+	transition: border-top 0.2s, border-bottom 0.2s;
+}
+
+.main-nav div a:hover, .main-nav div a:hover {
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+.main-nav div a {
+	margin: 0 10px;
+}
+
+.main-nav-scrolled {
+    position: fixed;
+    width:100%;
+    top:0;
+}
+
+
+
+/*------------------------------------*/
+/* FOOTER */
+/*------------------------------------*/
+
+
+footer {
+	background-color: #333;
+	z-index: 120;
+}
+
+.copyrightFooter {
+	color: #fff;
+	float: left;
+	font-size: 75%;
+	margin: 1% 0;
+	word-spacing: 1px;
+
+}
+
+.social-links {
+	list-style: none;
+	float: right;
+}
+
+.social-links li {
+	display:inline-block;
+	margin-right: 7px;
+}
+
+
+.social-links {
+	color: #fff;
+}
+
+.social-links i {
+	margin: 0 5px;
+}
+
+.social-links a:link, .social-links a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-links a:hover, .social-links a:active {
+	text-decoration: none;
+	color: #333;
+    border-radius:50%;
+    background-color:#fff;
+	
+}
+
+#facebook-extra-padding {
+	padding: 0 3px;
+}
+
+
+
+/* */
+
